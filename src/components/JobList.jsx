@@ -7,7 +7,6 @@ const JobList = () => {
 
     const { searchTerm, searchCountry, searchTriggered } = useContext(SearchContext);
 
-    // If search is triggered, filter jobs by both searchTerm and searchCountry
     const filteredJobs = searchTriggered
         ? jobs.filter(
             (job) =>

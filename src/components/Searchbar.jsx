@@ -9,7 +9,7 @@ const Searchbar = () => {
     const { searchTerm, setSearchTerm, searchCountry, setSearchCountry, setSearchTriggered } = useContext(SearchContext);
 
     const handleSearch = () => {
-        setSearchTriggered(true); // Trigger the search when the button is clicked
+        setSearchTriggered(true);
     };
 
     return (

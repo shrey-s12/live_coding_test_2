@@ -3,12 +3,12 @@ import React from 'react';
 const JobCard = ({ job }) => {
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 hover:border-orange-500 hover:bg-orange-100">
-      {/* Job Title */}
+
       <h1 className="text-lg font-semibold text-gray-800 mb-2">
         {job.title}
       </h1>
 
-      {/* Remote and Salary */}
+
       <div className="flex items-center text-sm text-gray-600 mb-4">
         <p className="bg-green-100 text-green-600 font-medium px-2 py-1 rounded-md">
           {job.remote}
@@ -16,9 +16,9 @@ const JobCard = ({ job }) => {
         <p className='ml-2'>Salary: {job.salary}</p>
       </div>
 
-      {/* Company Details */}
+ 
       <div className="flex items-center justify-between">
-        {/* Company Logo and Info */}
+
         <div className="flex items-center gap-2">
           <img src={job.companyLogo} alt="Company Logo" className="h-10 w-10 object-contain" />
           <div>
@@ -30,7 +30,6 @@ const JobCard = ({ job }) => {
           </div>
         </div>
 
-        {/* Save Icon */}
         <img
           src={job.saved}
           alt="Save Icon"
