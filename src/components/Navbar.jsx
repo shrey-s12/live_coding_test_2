@@ -5,7 +5,7 @@ import profileIcon from '../assets/profile_image.jpg'
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between border-b-2 px-28 py-2'>
+        <div className='flex justify-between border-b-2 px-36 py-2'>
             <div className='flex justify-between items-center'>
                 <img src={companylogo} alt="" className='h-[50px] w-[50px]' />
                 <h1 className='font-semibold text-xl'>Explorin Solutions</h1>

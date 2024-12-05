@@ -9,7 +9,7 @@ const Searchbar = () => {
     const { searchTerm, setSearchTerm, searchCountry, setSearchCountry } = useContext(SearchContext);
 
     return (
-        <div className="ml-[118px] max-w-[1000px] px-6 mt-16 border border-gray-200 shadow-md rounded-lg">
+        <div className="ml-[146px] max-w-[1000px] px-6 mt-16 border border-gray-200 shadow-md rounded-lg">
             <div className="flex justify-between items-center">
                 {/* Search Input */}
                 <div className="flex items-center border-r-2 border-gray-300 pr-6 w-1/2">

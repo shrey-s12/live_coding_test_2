@@ -2,7 +2,7 @@ import React from 'react';
 
 const JobCard = ({ job }) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 hover:border-orange-500 group">
+    <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 hover:border-orange-500 hover:bg-orange-100">
       {/* Job Title */}
       <h1 className="text-lg font-semibold text-gray-800 mb-2">
         {job.title}
