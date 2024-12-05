@@ -5,13 +5,16 @@ import SearchContext from '../context/SearchContext';
 
 const JobList = () => {
 
-    const { searchTerm, searchCountry } = useContext(SearchContext);
+    const { searchTerm, searchCountry, searchTriggered } = useContext(SearchContext);
 
-    const filteredJobs = jobs.filter(
-        (job) =>
-            job.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
-            job.location.toLowerCase().includes(searchCountry.toLowerCase())
-    );
+    // If search is triggered, filter jobs by both searchTerm and searchCountry
+    const filteredJobs = searchTriggered
+        ? jobs.filter(
+            (job) =>
+                job.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
+                job.location.toLowerCase().includes(searchCountry.toLowerCase())
+        )
+        : jobs;
 
     return (
         <div className="py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-36">
