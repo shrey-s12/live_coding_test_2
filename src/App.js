@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Searchbar from './components/Searchbar';
 import JobList from './components/JobList';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Searchbar />
       <JobList />
+      <Footer />
     </div>
   );
 }
