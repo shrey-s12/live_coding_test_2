@@ -8,7 +8,6 @@ const JobCard = ({ job }) => {
         {job.title}
       </h1>
 
-
       <div className="flex items-center text-sm text-gray-600 mb-4">
         <p className="bg-green-100 text-green-600 font-medium px-2 py-1 rounded-md">
           {job.remote}
@@ -16,7 +15,6 @@ const JobCard = ({ job }) => {
         <p className='ml-2'>Salary: {job.salary}</p>
       </div>
 
- 
       <div className="flex items-center justify-between">
 
         <div className="flex items-center gap-2">
